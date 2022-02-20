@@ -16,4 +16,44 @@ public abstract class Stock implements ISell {
         this.sellPrice = sellPrice;
         this.purchasePrice = purchasePrice;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getMadeFrom() {
+        return madeFrom;
+    }
+
+    public double getSellPrice() {
+        return sellPrice;
+    }
+
+    public double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMadeFrom(String madeFrom) {
+        this.madeFrom = madeFrom;
+    }
+
+    public void setSellPrice(double sellPrice) {
+        this.sellPrice = sellPrice;
+    }
+
+    public void setPurchasePrice(double purchasePrice) {
+        this.purchasePrice = purchasePrice;
+    }
 }
