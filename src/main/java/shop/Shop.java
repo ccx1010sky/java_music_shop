@@ -6,10 +6,12 @@ import java.util.ArrayList;
 
 public class Shop {
     private String name;
+    private double profit;
     ArrayList<ISell> stock;
 
     public Shop(String name) {
         this.name = name;
+        this.profit = 0;
         this.stock = new ArrayList<>();
     }
 
@@ -26,5 +28,12 @@ public class Shop {
 
     public int getStockCount(){
         return stock.size();
+    }
+
+    public double getTotalProfit(){
+        for (ISell item : stock){
+            profit += item.calculateMakeup();
+        }
+        return profit;
     }
 }
