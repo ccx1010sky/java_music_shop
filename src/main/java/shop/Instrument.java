@@ -1,4 +1,6 @@
-public abstract class Instrument extends Stock {
+package shop;
+
+public abstract class Instrument extends Stock  {
     private String classification;
 
     public Instrument(String name, String color, String madeFrom, double sellPrice, double purchasePrice, String classification) {

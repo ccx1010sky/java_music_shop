@@ -1,3 +1,5 @@
+package shop;
+
 import behaviour.ISell;
 
 public abstract class Stock implements ISell {
