@@ -19,4 +19,12 @@ public class Shop {
     public void removeItem(ISell item){
         this.stock.remove(item);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getStockCount(){
+        return stock.size();
+    }
 }
