@@ -11,9 +11,10 @@ public class Shop {
 
     public Shop(String name) {
         this.name = name;
-        this.profit = 0;
+        this.profit = 0.00;
         this.stock = new ArrayList<>();
     }
+
 
     public void addItem(ISell item){
          this.stock.add(item);

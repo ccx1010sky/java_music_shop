@@ -8,15 +8,15 @@ import static org.junit.Assert.*;
 
 public class TrumpetTest {
 
-    private Trumpet Trumpet;
+    private Trumpet trumpet;
 
     @Before
     public void before(){
-        Trumpet = new Trumpet("Trumpet","black","metal",100.00,50.00,"Brass");
+        trumpet = new Trumpet("Trumpet","black","metal",100.00,50.00,"Brass");
     }
     @Test
     public void hasName(){
-        assertEquals("Trumpet",Trumpet.getName());
+        assertEquals("Trumpet",trumpet.getName());
     }
 
 
