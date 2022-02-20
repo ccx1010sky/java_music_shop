@@ -15,4 +15,9 @@ public class Guitar extends Instrument{
     public double calculateMakeup(){
         return 0.99;
     };
+
+    @Override
+    public String playMusic() {
+        return "dinging";
+    }
 }

@@ -1,6 +1,8 @@
 package shop;
 
-public abstract class Instrument extends Stock  {
+import behaviour.IPlay;
+
+public abstract class Instrument extends Stock implements IPlay {
     private String classification;
 
     public Instrument(String name, String color, String madeFrom, double sellPrice, double purchasePrice, String classification) {
