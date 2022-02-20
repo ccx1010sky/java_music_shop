@@ -3,10 +3,10 @@ package shop;
 import shop.Instrument;
 
 public abstract class Accessory extends Stock {
-    private Instrument instrument;
+    private Instrument instrumentType;
 
-    public Accessory(String name, String color, String madeFrom, double sellPrice, double purchasePrice, Instrument instrument) {
+    public Accessory(String name, String color, String madeFrom, double sellPrice, double purchasePrice, Instrument instrumentType) {
         super(name, color, madeFrom, sellPrice, purchasePrice);
-        this.instrument = instrument;
+        this.instrumentType = instrumentType;
     }
 }
