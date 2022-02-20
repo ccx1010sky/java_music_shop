@@ -1,6 +1,8 @@
 package shop;
 
 import behaviour.ISell;
+import goods.Drum;
+import goods.Drumstick;
 import goods.Guitar;
 import goods.Trumpet;
 import org.junit.Before;
@@ -14,6 +16,8 @@ public class ShopTest {
     private Shop shop1;
     private Guitar guitar;
     private Trumpet trumpet;
+    private Drumstick drumstick;
+    private Drum drum;
 
     private ArrayList<ISell> stock;
 
@@ -23,7 +27,9 @@ public class ShopTest {
         guitar = new Guitar("guitar","blue","wood",200,100,"chordophone",6);
         trumpet = new Trumpet("Trumpet","black","metal",100.00,50.00,"Brass");
         stock = new ArrayList<>();
-        }
+        drumstick = new Drumstick("drumstick","grey","wood",20,10,drum);
+
+    }
 
 
     @Test
@@ -43,7 +49,13 @@ public class ShopTest {
         assertEquals(1,shop1.getStockCount());
     }
 
-
+    @Test
+    public void canGetTheTotalProfit(){
+        shop1.addItem(guitar);
+        shop1.addItem(trumpet);
+        shop1.addItem(drumstick);
+        assertEquals(160,shop1.getTotalProfit(),0.00);
+    }
 
 
 
