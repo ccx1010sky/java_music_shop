@@ -1,4 +1,6 @@
-public abstract class Stock {
+import behaviour.ISell;
+
+public abstract class Stock implements ISell {
     private String name;
     private String color;
     private String madeFrom;

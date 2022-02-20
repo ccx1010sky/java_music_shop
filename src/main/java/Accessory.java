@@ -1,4 +1,4 @@
-public class Accessory extends Stock{
+public abstract class Accessory extends Stock{
     private Instrument instruments;
 
     public Accessory(String name, String color, String madeFrom, double sellPrice, double purchasePrice, Instrument instruments) {
