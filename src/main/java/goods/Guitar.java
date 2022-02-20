@@ -9,12 +9,7 @@ public class Guitar extends Instrument{
         this.numberOfStrings = numberOfStrings;
     }
 
-    @Override
 
-
-    public double calculateMakeup(){
-        return 0.99;
-    };
 
     @Override
     public String playMusic() {

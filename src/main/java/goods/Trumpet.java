@@ -14,8 +14,5 @@ public class Trumpet extends Instrument  {
         return "didida";
     }
 
-    @Override
-    public double calculateMakeup() {
-        return 0;
-    }
+
 }

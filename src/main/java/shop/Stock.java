@@ -56,4 +56,9 @@ public abstract class Stock implements ISell {
     public void setPurchasePrice(double purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
+
+    @Override
+    public double calculateMakeup() {
+        return getSellPrice()-getPurchasePrice();
+    }
 }

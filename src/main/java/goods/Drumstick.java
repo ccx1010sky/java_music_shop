@@ -10,8 +10,5 @@ public class Drumstick extends Accessory{
         super(name, color, madeFrom, sellPrice, purchasePrice, instrument);
     }
 
-    @Override
-    public double calculateMakeup() {
-        return 0;
-    }
+
 }
